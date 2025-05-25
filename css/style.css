@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    padding-top: 30px;
+    margin-bottom: 12px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+header nav ul{
+    display: flex;
+    gap: 50px;
+}
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 6px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    text-decoration: none;
+    background: #46a358;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.list li a {
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.search_basket {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin-left: 267px;
+}
+
+.search_basket li img {
+    width: 29px;
+    height: 24px;
+    cursor: pointer;
+    display: block;
+}
+.banner {
+    width: 1200px;
+    height: 450px;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner .box {
+    padding-left: 48px;
+}
+.banner .box h3 {
+    margin-top: 0;
+    padding-top: 68px;
+    margin-bottom: 7px;
+}
+.banner .box h1,
+.banner .box p,
+.banner .box ul {
+    margin-top: 5px;
+    padding: 0;
+}
+.banner .box ul {
+    padding-left: 0;
+    list-style: none;
+    padding-top: 55px;
+}
+main ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px 26px;
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    background: #46a358;
+}
+.green {
+    color:#46a358 ;
+}
+
+
+
+
+

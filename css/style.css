@@ -1,4 +1,51 @@
-*{
+
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../fonts/cerapro-bold-webfont.eot');
+    src: url('../fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-bold-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-bold-webfont.woff') format('woff'),
+    url('../fonts/cerapro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_prolight';
+    src: url('../fonts/cerapro-light-webfont.eot');
+    src: url('../fonts/cerapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-light-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-light-webfont.woff') format('woff'),
+    url('../fonts/cerapro-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/cerapro-medium-webfont.eot');
+    src: url('../fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-medium-webfont.woff') format('woff'),
+    url('../fonts/cerapro-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cera_problack';
+    src: url('cerapro-black-webfont.eot');
+    src: url('cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('cerapro-black-webfont.woff2') format('woff2'),
+    url('cerapro-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,10 +64,6 @@ header .container{
     align-items: center;
     margin: auto;
 }
-header nav ul{
-    display: flex;
-    gap: 50px;
-}
 .login {
     display: flex;
     align-items: center;
@@ -32,6 +75,11 @@ header nav ul{
     color: white;
     text-decoration: none;
     background: #46a358;
+    transition: 0.3s;
+    font-family: 'cera_promedium';
+}
+.login:hover{
+    background-color: red;
 }
 nav ul li a{
     text-decoration: none;
@@ -39,6 +87,7 @@ nav ul li a{
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
+    font-family: 'cera_promedium';
 }
 nav {
     display: flex;
@@ -52,6 +101,7 @@ nav {
     padding: 0;
     margin: 0;
     align-items: center;
+    font-family: 'cera_prolight';
 }
 
 .list li a {
@@ -59,6 +109,7 @@ nav {
     color: #3d3d3d;
     text-decoration: none;
     font-weight: 500;
+    font-family: 'cera_prolight';
 }
 
 .search_basket {
@@ -92,13 +143,29 @@ nav {
     margin-top: 0;
     padding-top: 68px;
     margin-bottom: 7px;
+    font-family: 'cera_prolight';
+    text-transform: uppercase;
+
 }
-.banner .box h1,
 .banner .box p,
 .banner .box ul {
     margin-top: 5px;
     padding: 0;
 }
+.banner .box h1 {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-family: 'cera_problack', sans-serif;
+    letter-spacing: -0.02em;
+
+}
+.banner .box p{
+    font-family: 'cera_prolight', sans-serif;
+}
+
 .banner .box ul {
     padding-left: 0;
     list-style: none;
@@ -115,11 +182,66 @@ main ul li a {
     color: white;
     text-decoration: none;
     background: #46a358;
+    font-family: 'cera_promedium', sans-serif;
 }
 .green {
     color:#46a358 ;
 }
 
+.menu .h3{
+    font-family: 'cera_promedium', sans-serif;}
+.green_2{
+    color:#46a358 ;
+}
+.menu ul{
+    list-style: none;
+    font-family: 'cera_promedium', sans-serif;
+}
+.left ul li {
+    margin-bottom: 15px;
+    padding-left: 12px;
+}
+.menu a{
+    text-decoration: none;
+    font-family: 'cera_promedium', sans-serif;
+    color: #3d3d3d;
+}
+.left{
+    margin-top: 171px;
+    max-width: 310px;
+    background: #fbfbfb;
+    padding-top: 14px;
+    padding-left: 18px;
+    flex-shrink: 0;
+}
+.sale{
+    margin-top: 377px;
+    max-width: 100%;
+    width: 370px;
+    height: 470px;
+}
+.menu_box{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 135px;
+}
+.right_menu{
+    display: flex;
+    margin-top: 171px;
+    padding-left: 50px;
+}
+.right_menu ul{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.right_menu ul li{
+    margin-right: 37px;
+}
+.right_menu ul p{
+    margin-left: 385px;
+    white-space: nowrap;
+}
 
 
 

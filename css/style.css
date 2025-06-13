@@ -267,6 +267,22 @@ nav {
     margin-top: 3px;
     color: #46a358;
     font-family: 'cera_probold';
-
 }
-
+.number_pages{
+    display: flex;
+    justify-content: flex-end;
+}
+.number_pages ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-top: 90px;
+}
+.number_pages a{
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

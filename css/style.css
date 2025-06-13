@@ -193,15 +193,15 @@ nav {
     color:#46a358 ;
 }
 .container_2{
+    padding-top: 40px;
     max-width: 1200px;
     display: flex;
     margin: auto;
     gap: 50px;
+    align-items: center;
 }
 .left{
-    max-width: 310px;
-    padding-top: 14px;
-    margin-top: 171px;
+    flex: 0 0 310px;
     background: #fbfbfb;
 }
 .left ul {
@@ -211,9 +211,10 @@ nav {
 .left li a{
     text-decoration: none;
     padding-left: 12px;
+    margin-bottom: 20px;
     line-height: 30px;
     color: #3d3d3d;
-    font-family: 'cera_promedium', sans-serif;
+    font-family: 'cera_prolight';
 }
 .sale{
     margin-bottom: 377px;
@@ -225,27 +226,32 @@ nav {
 .right_menu{
     max-width: 838px;
     margin-top: 171px;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
-    font-family: 'cera_promedium', sans-serif;
+}
+
+.right-side-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'cera_prolight';
 
 }
-.right_menu ul{
-    list-style: none;
-    display: inline-flex;
-    gap: 37px;
+.right-side-menu li a{
+    text-decoration: none;
 }
-.right_menu p {
-    display: inline-flex;
+.right-side-menu p{
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 33px 70px;
-    justify-content: space-between;
+    justify-content: flex-start;
 
 
 }

@@ -50,10 +50,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-div{
-    max-width: 1200px;
-    margin: auto;
-}
+
 header{
     padding-top: 30px;
     margin-bottom: 12px;
@@ -198,10 +195,8 @@ nav {
     display: flex;
     margin: auto;
     gap: 50px;
-    align-items: center;
 }
 .left{
-    flex: 0 0 310px;
     background: #fbfbfb;
 }
 .left ul {
@@ -225,8 +220,6 @@ nav {
 }
 .right_menu{
     max-width: 838px;
-    margin-top: 171px;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -243,17 +236,16 @@ nav {
 .right-side-menu li a{
     text-decoration: none;
 }
-.right-side-menu p{
-    display: inline-block;
-    align-items: center;
+.right-side-menu {
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-
-
+    justify-content: space-between;
 }
 .product-card{
     display: inline-block;

@@ -36,10 +36,10 @@
 }
 @font-face {
     font-family: 'cera_problack';
-    src: url('cerapro-black-webfont.eot');
-    src: url('cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('cerapro-black-webfont.woff2') format('woff2'),
-    url('cerapro-black-webfont.woff') format('woff');
+    src: url('../fonts/cerapro-black-webfont.eot');
+    src: url('../fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -124,7 +124,7 @@ header nav ul li :hover::after {
     color: #3d3d3d;
     text-decoration: none;
     font-weight: 500;
-    font-family: 'cera_medium' sans-serif;
+    font-family: 'cera_medium';
 }
 
 .search_basket {

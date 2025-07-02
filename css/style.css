@@ -268,11 +268,11 @@ header nav ul li :hover::after {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 25px;
+    position: relative;
 }
 .product-card{
     display: inline-block;
     width: 258px;
-    position: relative;
 }
 .product-card ul{
     position: absolute;
@@ -285,19 +285,36 @@ header nav ul li :hover::after {
     width: 100%;
     height: 300px;
 }
-.product-icons{
+.product-content {
+    position: relative;
+    display: inline-block;
+}
+.product-icons {
     position: absolute;
-    bottom: 12px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
     gap: 10px;
     list-style: none;
-    transform: translateX(-50%);
-    transition: opacity 0.3s ease;
+    pointer-events: none;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 1;
 }
-.product-card:hover .product-icons {
+.product-content:hover .product-icons {
     opacity: 1;
     pointer-events: auto;
 }
+.product-icons a svg path {
+    fill: #3D3D3D;
+    transition: fill 0.3s ease;
+}
+.product-icons a:hover svg path {
+    fill: #46a358;
+    cursor: pointer;
+}
+
 .cards a{
     text-decoration: none;
     list-style: none;

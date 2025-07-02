@@ -384,10 +384,10 @@ header nav ul li :hover::after {
     color: white;
 }
 .number_pages a:hover svg path{
-    stroke: white;
+    stroke: #727272;
 }
-.arrow:hover svg rect{
-    stroke: #3d3d3d;
+.number_pages a.arrow:hover svg path{
+    stroke: white;
 }
 
 

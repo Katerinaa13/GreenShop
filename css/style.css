@@ -82,13 +82,17 @@ nav ul li a{
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    font-family: 'cera_promedium';
 }
 nav {
     display: flex;
     align-items: center;
     gap: 30px;
 }
+nav ul.list li a:hover{
+    color: #46a358;
+    transition: color 0.3s ease;
+}
+
 
 header nav ul li :after {
     content: "";
@@ -124,7 +128,6 @@ header nav ul li :hover::after {
     color: #3d3d3d;
     text-decoration: none;
     font-weight: 500;
-    font-family: 'cera_medium';
 }
 
 .search_basket {
@@ -198,15 +201,11 @@ header nav ul li :hover::after {
     background: #46a358;
     font-family: 'cera_promedium', sans-serif;
 }
-.green {
-    color:#46a358 ;
-}
+
 .menu .h3{
     font-family: 'cera_problack', sans-serif;
 }
-.green_2{
-    color:#46a358 ;
-}
+
 .container_2{
     padding-top: 40px;
     max-width: 1200px;
@@ -232,9 +231,7 @@ header nav ul li :hover::after {
 .sale{
     max-width: 100%;
 }
-.green_3 {
-    color: #46a358;
-}
+
 .right_menu{
     max-width: 838px;
     justify-content: space-between;
@@ -263,6 +260,11 @@ header nav ul li :hover::after {
     font-family: 'cera_prolight';
 
 }
+.left ul li:hover a,
+.right-side-menu ul li:hover a {
+    color: #46a358;
+    transition: color 0.3s ease;
+}
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -273,7 +275,13 @@ header nav ul li :hover::after {
 .product-card{
     display: inline-block;
     width: 258px;
+    border-top: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
+.product-card:hover {
+    border-top-color: #46a358;
+}
+
 .product-card ul{
     position: absolute;
     width: 100%;
@@ -295,7 +303,7 @@ header nav ul li :hover::after {
     left: 50%;
     transform: translate(-50%);
     display: flex;
-    gap: 10px;
+    gap: 26px;
     list-style: none;
     pointer-events: none;
     transition: 0.3s;
@@ -314,12 +322,30 @@ header nav ul li :hover::after {
     fill: #46a358;
     cursor: pointer;
 }
-
+.discount-label {
+    position: absolute;
+    gap: 16px;
+    top: 14px;
+    left: 0;
+    width: 78px;
+    height: 29px;
+    background: #46A358;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'cera_promedium', sans-serif;
+}
 .cards a{
     text-decoration: none;
     list-style: none;
     color: #3d3d3d;
     font-family: 'cera_promedium', sans-serif;
+}
+.price-sale{
+    color: #727272;
+    font-family: 'cera_promedium';
+    text-decoration: line-through;
 }
 .product-price{
     display: block;

@@ -83,6 +83,13 @@ nav ul li a{
     font-size: 16px;
     color: #3d3d3d;
 }
+header nav ul li ul{
+    gap: 0;
+}
+nav ul.list {
+    display: flex;
+    gap: 47px;
+}
 nav {
     display: flex;
     align-items: center;
@@ -94,15 +101,48 @@ nav ul.list li a:hover{
 }
 
 
-header nav ul li :after {
+nav ul.list > li > a::after {
     content: "";
     display: block;
     width: 0;
     height: 3px;
     background-color: #46A358;
-    margin-top: 22px;
+    margin-top: 8px;
+    transition: width 0.4s ease;
+}
+
+nav ul.list > li > a:hover::after {
+    width: 100%;
+}
+
+header nav ul li.dropdown{
+    position: relative;
+}
+header nav ul li ul.submenu li{
+    background: #edf6ee;
+    padding: 7px 14px;
+    list-style: none;
+}
+header nav ul li ul.submenu li:hover{
+background-color: #1a712a;
+}
+header nav ul li ul.submenu li:hover a{
+    color: white;
+    font-family: 'cera_prolight';
+}
+header nav ul li ul.submenu{
+    min-width: 188px;
+    position: absolute;
+    left: -55px;
+    top: 67px;
+    overflow: hidden;
+    height: 0;
     transition: 0.4s;
 }
+header nav ul li.dropdown:hover .submenu{
+    height: 230px;
+}
+
 header nav ul li :hover::after {
     width: 100%;
 }
